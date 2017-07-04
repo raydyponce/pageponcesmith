@@ -1,0 +1,56 @@
+include mixins
+extends header
+block content
+  .container
+    nav.navbar.navbar-inverse
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle(type="button", data-toggle="collapse", data-target="#navbarP", aria-expanded="false", aria-controls="navbar")
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href="#") Page Ponce-Smith
+          
+        .collapse.navbar-collapse(id="navbarP")
+          ul.nav.navbar-nav
+            +nav_item("#", "active") Inicio
+            +nav_item_dropdown("#")(label="Servicios")
+              +nav_item("#") Action
+              +nav_item("#") Another action
+              +nav_item("#") Something else here
+              +nav_divider
+              +nav_header Nav header
+              +nav_item("#") Separated link
+              +nav_item("#") One more separated link
+          ul.nav.navbar-nav.navbar-right
+            +nav_item("#") Registrate
+      
+    .jumbotron
+      .row
+        .col-md-6.col-sm-6.col-xs-12
+          #contentI
+            div(align="center")
+              .container
+                br
+                img(src="images/logo2.png", alt="logo", width="90")
+                p
+                  strong Page Ponce-Smith
+                p(size="20px") Compara entre cientos de habitaciones y elije la que más te convenga
+                select.chosen-select
+                  option Jacobo Dickson Hunter
+                  option Jose Luis Bustamante y Rivero
+                  option Cerro Colorado
+                  option Cayma
+                  option Yanahuara
+              .container
+                br
+                button.btn.btn-default Buscar
+                p O si ya estas registrado...
+                button.btn.btn-info Inicia Sesión
+              
+  
+  script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+  script(src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+  
+  

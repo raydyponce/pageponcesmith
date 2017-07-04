@@ -1,0 +1,19 @@
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(../images/banner-bg.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 570px;
+    text-size: 50%;
+}
+#contentI{
+  font-family: sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  height: 500px;
+  width: 400px;
+  transform: translateX(70%);
+  color: #555;
+}
